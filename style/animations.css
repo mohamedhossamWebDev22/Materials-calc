@@ -1,0 +1,16 @@
+@-webkit-keyframes btnHover {
+  from {
+    background: #F3C645;
+  }
+  to {
+    background: linear-gradient(to right, #1A1B1A, #5423C1);
+  }
+}
+@keyframes btnHover {
+  from {
+    background: #F3C645;
+  }
+  to {
+    background: linear-gradient(to right, #1A1B1A, #5423C1);
+  }
+}/*# sourceMappingURL=animations.css.map */

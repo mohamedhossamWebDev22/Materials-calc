@@ -9,19 +9,56 @@
         <link rel="stylesheet" href="style/style.css">
 
         <title>Materials Calculator</title>
+
+        <link rel="shortcut icon" href="./imgs/img1.png" type="image/x-icon">
     </head>
     <body>
+        <div id="mt" class="material">
+            <form>
+                <label id="height">Height:</label><input type="number">
+                <br>
+                <br>
+                <label id="width">Width:</label><input type="number">
+                <br>
+                <label id="matTxt"></label>
+                <br>
+                <button id="matDone">Done</button>
+            </form>
+
+            <i id="close" class="fa-solid fa-circle-xmark"></i>
+        </div>
+
+        <div id="pnt" class="paints">
+            <form>
+                <label>طول:</label><input type="number">
+                <br>
+                <br>
+                <label>عرض:</label><input type="number">
+                <br>
+                <br>
+                <label>الارتفاع:</label><input type="number">
+                <br>
+                <label id="matTxt"></label>
+                <br>
+                <button id="matDone">Done</button>
+            </form>
+
+            <i id="close2" class="fa-solid fa-circle-xmark"></i>
+        </div>
+
+        <div class="paint"></div>
+
         <div class="titles">
             <h1 class="title">Material Calculator</h1>
             <p>This will be easier than ever!</p>
         </div>
 
         <div class="content">
-            <div class="mat btn">
+            <div id="matCall" class="mat btn">
                 <img src="imgs/img1.png" alt="Materials img">
                 <a>For Material</a>
             </div>
-            <div class="paint btn">
+            <div id="paintCall" class="paint btn">
                 <img src="imgs/img2.png" alt="Materials img">
                 <a>For Paint</a>
             </div>
@@ -35,8 +72,11 @@
 
         <footer>
             <h5>Created with 💜  by MOhamed hossam</h5>
+
+            <h5>©2022</h5>
         </footer>
 
         <script src="https://kit.fontawesome.com/a655ca105d.js" crossorigin="anonymous"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>

@@ -1,7 +1,59 @@
+@-webkit-keyframes btnHover {
+  from {
+    background: #F3C645;
+  }
+  to {
+    background: linear-gradient(to right, #1A1B1A, #5423C1);
+  }
+}
+@keyframes btnHover {
+  from {
+    background: #F3C645;
+  }
+  to {
+    background: linear-gradient(to right, #1A1B1A, #5423C1);
+  }
+}
+.fa-solid {
+  color: #5423C1;
+  font-size: 30px;
+}
+
 body, html {
   scroll-behavior: smooth;
   background: #F3C645;
   color: #1A1B1A;
+}
+body .material, body .paints, html .material, html .paints {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  left: 30%;
+  height: 50%;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0px 0px 8px black;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background: #F3C645;
+  padding: 15px 10px;
+}
+body .material label, body .paints label, html .material label, html .paints label {
+  font-family: sans-serif;
+}
+body .material #matTxt, body .paints #matTxt, html .material #matTxt, html .paints #matTxt {
+  color: #5423C1;
+  padding: 2px 2px;
+}
+body .material button, body .paints button, html .material button, html .paints button {
+  background: #1A1B1A;
+  color: #5423C1;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+body .titles, html .titles {
+  text-align: center;
 }
 body .titles .title, body .titles p, html .titles .title, html .titles p {
   font-family: sans-serif;
@@ -18,7 +70,7 @@ body .content, html .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
 }
 body .content img, html .content img {
   width: 80px;
@@ -27,12 +79,43 @@ body .content .btn, html .content .btn {
   display: flex;
   align-items: center;
   margin: 5px 5px;
-  background: linear-gradient(to right, #1A1B1A, #5423C1);
+  background: #F3C645;
+  box-shadow: 0px 0px 10px black;
   border-radius: 10px;
   padding: 6px 8px;
+  cursor: pointer;
 }
 body .content .btn a, html .content .btn a {
-  color: white;
+  color: #1A1B1A;
   font-family: sans-serif;
   font-size: 20px;
+}
+body .content .btn:hover, html .content .btn:hover {
+  -webkit-animation: normal btnHover 2s;
+          animation: normal btnHover 2s;
+}
+body .content .btn:hover a, html .content .btn:hover a {
+  color: white;
+}
+body .who .cop, html .who .cop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .who .cop a, html .who .cop a {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+body .who .cop img, html .who .cop img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 4px 4px;
+}
+body footer, html footer {
+  display: flex;
+  justify-content: space-around;
+  color: #5423C1;
+  background: #1A1B1A;
+  font-family: sans-serif;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

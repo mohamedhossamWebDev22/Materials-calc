@@ -1,1 +1,56 @@
 @import './variables.scss';
+
+body, html{
+    scroll-behavior: smooth;
+
+    background: $color1;
+    color: $color3;
+    .titles{
+        .title{
+            font-family: sans-serif;
+            font-size: 40px;
+
+            color:$color2;
+        }
+        p{
+            @extend .title;
+            font-size: 15px;
+            color: $color3;
+
+            font-weight: lighter;
+        }
+    }
+    .content{
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        
+        height: 70vh;
+        img{
+            width: 80px;
+        }
+
+        .btn{
+            display: flex;
+
+            align-items: center;
+
+            margin: 5px 5px;
+
+            background: linear-gradient(to right ,$color3, $color2);
+            
+            border-radius: 10px;
+
+            padding: 6px 8px;
+            a{
+                color: white;
+
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+}

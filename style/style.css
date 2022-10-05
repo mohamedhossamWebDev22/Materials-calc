@@ -1,0 +1,38 @@
+body, html {
+  scroll-behavior: smooth;
+  background: #F3C645;
+  color: #1A1B1A;
+}
+body .titles .title, body .titles p, html .titles .title, html .titles p {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #5423C1;
+}
+body .titles p, html .titles p {
+  font-size: 15px;
+  color: #1A1B1A;
+  font-weight: lighter;
+}
+body .content, html .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+body .content img, html .content img {
+  width: 80px;
+}
+body .content .btn, html .content .btn {
+  display: flex;
+  align-items: center;
+  margin: 5px 5px;
+  background: linear-gradient(to right, #1A1B1A, #5423C1);
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+body .content .btn a, html .content .btn a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

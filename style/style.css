@@ -1,17 +1,6 @@
-@-webkit-keyframes btnHover {
-  from {
-    background: #F3C645;
-  }
-  to {
-    background: linear-gradient(to right, #1A1B1A, #5423C1);
-  }
-}
-@keyframes btnHover {
-  from {
-    background: #F3C645;
-  }
-  to {
-    background: linear-gradient(to right, #1A1B1A, #5423C1);
+@media screen {
+  body {
+    background: white;
   }
 }
 .fa-solid {
@@ -41,16 +30,17 @@ body .material, body .paints, html .material, html .paints {
 body .material label, body .paints label, html .material label, html .paints label {
   font-family: sans-serif;
 }
-body .material #matTxt, body .paints #matTxt, html .material #matTxt, html .paints #matTxt {
+body .material #matTxt, body .paints #matTxt, body .paints #pntTxt, html .material #matTxt, html .paints #matTxt, html .paints #pntTxt {
   color: #5423C1;
   padding: 2px 2px;
 }
-body .material button, body .paints button, html .material button, html .paints button {
+body .material #matDone, body .paints #matDone, body .paints #pntDone, html .material #matDone, html .paints #matDone, html .paints #pntDone {
   background: #1A1B1A;
   color: #5423C1;
   font-size: 20px;
   font-family: sans-serif;
   border-radius: 10px;
+  direction: rtl;
 }
 body .titles, html .titles {
   text-align: center;
@@ -91,8 +81,7 @@ body .content .btn a, html .content .btn a {
   font-size: 20px;
 }
 body .content .btn:hover, html .content .btn:hover {
-  -webkit-animation: normal btnHover 2s;
-          animation: normal btnHover 2s;
+  background: linear-gradient(to right, #1A1B1A, #5423C1);
 }
 body .content .btn:hover a, html .content .btn:hover a {
   color: white;

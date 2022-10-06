@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './animations.scss';
+@import './responsive.scss';
 
 .fa-solid{
     color:$color2;
@@ -44,7 +45,7 @@ body, html{
             padding: 2px 2px;
         }
 
-        button{
+        #matDone{
             background: $color3;
             color:$color2;
 
@@ -52,10 +53,19 @@ body, html{
             font-family: sans-serif;
 
             border-radius: 10px;
+
+            direction: rtl;
         }
     }
     .paints{
         @extend .material;
+
+        #pntTxt{
+            @extend #matTxt;
+        }
+        #pntDone{
+            @extend #matDone;
+        }
     }
 
     .titles{
@@ -111,8 +121,7 @@ body, html{
             }
 
             &:hover{
-                animation:normal btnHover 2s;
-
+                background: linear-gradient(to right , $color3, $color2);
                 a{
                     color: white;
                 }

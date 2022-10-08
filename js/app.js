@@ -17,9 +17,19 @@ class Materials {
     }
     close(){
         this.mat.style.display = 'none';
+
+        this.txt.innerHTML = '';
+
+        this.height.value = '';
+        this.width.value = '';
     }
-    get(){        
-        this.txt.innerHTML = `You need ${(parseFloat(this.width.value) * (parseFloat(this.height.value)))} meter square.`;
+    get(){ 
+        if (this.width.value != '' || this.height.value != '') {
+            this.txt.innerHTML = `You need ${(parseFloat(this.width.value) *  (parseFloat(this.height.value)))} meter square.`;
+        }
+        else{
+            alert('You must type a thing!!')
+        }
     }
 }
 
@@ -42,9 +52,20 @@ class Paints {
     }
     close(){
         this.pnt.style.display = 'none';
+
+        this.txt.innerHTML = '';
+
+        this.height.value = '';
+        this.width.value = '';
+        this.long.value = '';
     }
-    get(){        
-        this.txt.innerHTML = `You need ${(parseFloat(this.width.value) * (parseFloat(this.long.value))) * (parseFloat(this.height.value))} meter square.`;
+    get(){ 
+        if (this.width.value != '' || this.height.value != '' || this.long.value != '') {
+            this.txt.innerHTML = `You need ${(parseFloat(this.width.value) * (parseFloat(this.long.value))) * (parseFloat(this.height.value))} meter square.`;
+        }
+        else{
+            alert('You must type a thing!!')
+        }
     }
 }
 

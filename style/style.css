@@ -1,8 +1,3 @@
-@media screen {
-  body {
-    background: white;
-  }
-}
 .fa-solid {
   color: #5423C1;
   font-size: 30px;
@@ -13,7 +8,7 @@ body, html {
   background: #F3C645;
   color: #1A1B1A;
 }
-body .material, body .paints, html .material, html .paints {
+body .material, html .material {
   position: fixed;
   display: none;
   justify-content: space-between;
@@ -27,14 +22,43 @@ body .material, body .paints, html .material, html .paints {
   background: #F3C645;
   padding: 15px 10px;
 }
-body .material label, body .paints label, html .material label, html .paints label {
+body .material label, html .material label {
   font-family: sans-serif;
 }
-body .material #matTxt, body .paints #matTxt, body .paints #pntTxt, html .material #matTxt, html .paints #matTxt, html .paints #pntTxt {
+body .material #matTxt, html .material #matTxt {
   color: #5423C1;
   padding: 2px 2px;
 }
-body .material #matDone, body .paints #matDone, body .paints #pntDone, html .material #matDone, html .paints #matDone, html .paints #pntDone {
+body .material #matDone, html .material #matDone {
+  background: #1A1B1A;
+  color: #5423C1;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  direction: rtl;
+}
+body .paints, html .paints {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  left: 5%;
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0px 0px 8px black;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background: #F3C645;
+  padding: 15px 10px;
+}
+body .paints label, html .paints label {
+  font-family: sans-serif;
+}
+body .paints #pntTxt, html .paints #pntTxt {
+  color: #5423C1;
+  padding: 2px 2px;
+}
+body .paints #pntDone, html .paints #pntDone {
   background: #1A1B1A;
   color: #5423C1;
   font-size: 20px;
@@ -107,4 +131,27 @@ body footer, html footer {
   background: #1A1B1A;
   font-family: sans-serif;
   font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .material {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    right: 2%;
+  }
+  .material input {
+    width: 60px;
+  }
+  .paints {
+    width: 100%;
+    height: 70%;
+    flex-direction: row;
+  }
+  .paints form {
+    padding: 0px 2px;
+  }
+  .paints form input {
+    width: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,10 @@
-@media screen and (max-width: 480px) {
-  .title {
-    color: wheat;
+@media screen and (max-width: 580px) {
+  .material {
+    width: 90%;
+    height: 80%;
+  }
+  .paints {
+    width: 90%;
+    height: 80%;
   }
 }/*# sourceMappingURL=responsive.css.map */

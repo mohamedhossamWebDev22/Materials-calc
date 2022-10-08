@@ -69,12 +69,22 @@ class Paints {
     }
 }
 
+
+function advertSmart() {
+    window.open(
+        'https://www.facebook.com/Concrete.Construction.interior/', 
+        '_blank'
+    )
+}
+
 //Data
 const materials = new Materials(),
 paints = new Paints();
 
 let MatCall = document.getElementById('matCall'),
 PaintCall = document.getElementById('paintCall');
+
+let cop = document.getElementById('logo');
 
 //Events
 MatCall.onclick = function (){materials.Call()};
@@ -87,3 +97,5 @@ materials.btn.onclick = function (){materials.get()};
 PaintCall.onclick = function (){paints.Call()};
 paints.closeBtn.onclick = function (){paints.close()};
 paints.btn.onclick = function () {paints.get()};
+
+cop.onclick = function (){advertSmart()};
